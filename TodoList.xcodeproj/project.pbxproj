@@ -10,6 +10,7 @@
 		280AB5F80629004D7D31F003 /* Pods_TodoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EF658427A5E9957DBD8618 /* Pods_TodoList.framework */; };
 		DA0C75422241186B00C5F1AF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0C75412241186B00C5F1AF /* Item.swift */; };
 		DA79B6F522410B5000365643 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA79B6F422410B5000365643 /* Category.swift */; };
+		DA7C373D22436B17004B1720 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C373C22436B17004B1720 /* SwipeTableViewController.swift */; };
 		DA9F4DB0223683760038ACB0 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F4DAF223683760038ACB0 /* CategoryViewController.swift */; };
 		DAA857FA22313C42001E66A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA857F922313C42001E66A4 /* AppDelegate.swift */; };
 		DAA857FC22313C42001E66A4 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA857FB22313C42001E66A4 /* TodoListViewController.swift */; };
@@ -22,6 +23,7 @@
 		0D7117FAF9C8B35FE66CB113 /* Pods-TodoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoList.release.xcconfig"; path = "Target Support Files/Pods-TodoList/Pods-TodoList.release.xcconfig"; sourceTree = "<group>"; };
 		DA0C75412241186B00C5F1AF /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		DA79B6F422410B5000365643 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		DA7C373C22436B17004B1720 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		DA9F4DAF223683760038ACB0 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		DAA857F622313C42001E66A4 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA857F922313C42001E66A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				DA9F4DAF223683760038ACB0 /* CategoryViewController.swift */,
 				DAA857FB22313C42001E66A4 /* TodoListViewController.swift */,
+				DA7C373C22436B17004B1720 /* SwipeTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -229,15 +232,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TodoList/Pods-TodoList-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -255,6 +262,7 @@
 				DA0C75422241186B00C5F1AF /* Item.swift in Sources */,
 				DA79B6F522410B5000365643 /* Category.swift in Sources */,
 				DAA857FC22313C42001E66A4 /* TodoListViewController.swift in Sources */,
+				DA7C373D22436B17004B1720 /* SwipeTableViewController.swift in Sources */,
 				DAA857FA22313C42001E66A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
